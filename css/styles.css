@@ -73,6 +73,7 @@ header h1 {
 
 p {
 	margin: 50px 0 0 0;
+  font-weight: 100;
 	font-size: 2em;
 }
 
