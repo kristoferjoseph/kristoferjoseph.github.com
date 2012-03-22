@@ -30,8 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	color: #000;
-	background: #fff;
+	color: #000000;
 	line-height: 1;
 	text-rendering: optimizeLegibility;
   font-family: "proxima-nova", sans-serif;
@@ -56,24 +55,56 @@ table {
 	border-spacing: 0;
 }
 
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
+   j.mp/bestclearfix */
+
+.clearfix:before, .clearfix:after {
+    content: "\0020"; 
+    display: block; 
+    height: 0; 
+    overflow: hidden;
+}
+
+.clearfix:after { clear: both; }
+
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+
+.clearfix { zoom: 1; }
+
 .container {
 	width: 90%;
 	margin: 0 auto;
 }
 
-header {
-	margin: 50px 0 0 0;
+.sign {
+  padding: 20px;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -moz-box-shadow:  0 0 25px #000;
+  -webkit-box-shadow: 0 0 25px #000;
+  box-shadow: 0 0 25px #000;
+
 }
 
-header h1 {
-	letter-spacing: -0.05em;
-	font-size: 3.5em;
-  font-weight: 900;
+.inner {
+  background: #000000;
 }
 
-p {
-	margin: 50px 0 0 0;
-  font-weight: 100;
-	font-size: 2em;
+.sorry {
+  font-family: "bistro-script-web";
+  font-size: 5em;
+  float: left;
+  font-weight: 400;
+  font-style: normal;
 }
 
+.been {
+
+}
+
+.busy {
+
+}
