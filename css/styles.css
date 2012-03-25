@@ -30,10 +30,14 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+  margin: 0px;
+	padding: 0px;
+	background: url(/images/bg_texture.png) repeat 0 0;
+	font-family: Verdana, Helvetica, sans-serif;
 	color: #000000;
 	line-height: 1;
 	text-rendering: optimizeLegibility;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif;
 }
 
 ol, ul {
@@ -72,8 +76,11 @@ table {
 .clearfix { zoom: 1; }
 
 .container {
-	width: 90%;
+  position: relative;
+  top: 40px;
+  width: 850px;
 	margin: 0 auto;
+  line-height: 12em;
 }
 
 .sign {
@@ -90,21 +97,88 @@ table {
 }
 
 .inner {
+  padding: 0 20px 20px 20px;
+  color: #ffffff;
   background: #000000;
 }
 
 .sorry {
-  font-family: "bistro-script-web";
-  font-size: 5em;
-  float: left;
+  font-size: 14em;
+  font-family: "bistro-script-web-1", "bistro-script-web-2";
   font-weight: 400;
-  font-style: normal;
+
+  transform:rotate(-7deg);
+  -ms-transform:rotate(-7deg); /* IE 9 */
+  -moz-transform:rotate(-7deg); /* Firefox */
+  -webkit-transform:rotate(-7deg); /* Safari and Chrome */
+  -o-transform:rotate(-7deg); /* Opera */
+
+}
+
+.stroke {
+  width: 200px;
+  height: 50px;
+  float: left;
+  clear: both;
+  margin: 10px 0 0 70px;
+  background: url(/images/stroke.png);
 }
 
 .been {
-
+  color: #b3b3b3;
+  float: right;
+  font-size: 13em;
+  margin-top: -100px;
 }
 
-.busy {
+.working {
+  color: #fa0000;
+  clear: both;
+  font-size: 15em;
+}
 
+.footer-nav  {
+  line-height: 0px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.footer-nav li {
+  display: inline;
+}
+
+.footer-nav li a {
+  display: inline-block;
+  padding: 10px 5px;
+}
+
+.services {
+  width: 30px;
+  height: 30px;
+  background-image: url(/images/services-set-grey.png);
+}
+
+.services:hover {
+  background-image: url(/images/services-set.png);
+}
+
+.services a {
+  margin: 0;
+  padding: 0;
+}
+
+.twitter {
+  background-position: -80px 0px;
+}
+
+.github {
+  background-position: -240px -40px;
+}
+
+.zerply {
+  background-position: -360px -40px;
+}
+
+.linkedin {
+  background-position: -240px 0px;
 }
