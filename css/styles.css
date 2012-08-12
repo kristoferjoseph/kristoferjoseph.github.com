@@ -16,47 +16,46 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 
 body {
-  margin: 0px;
-	padding: 0px;
-	background: url(/images/bg_texture.png) repeat 0 0;
-	font-family: Verdana, Helvetica, sans-serif;
-	color: #000000;
-	line-height: 1;
-	text-rendering: optimizeLegibility;
-  font-family: "proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(/images/bg_texture.png) repeat 0 0;
+  color: #000000;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  font-family: "proxima-nova-extra-condensed", sans-serif;
 }
 
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
@@ -79,7 +78,7 @@ table {
   position: relative;
   top: 40px;
   width: 850px;
-	margin: 0 auto;
+  margin: 0 auto;
   line-height: 12em;
 }
 
@@ -104,14 +103,14 @@ table {
 
 .sorry {
   font-size: 14em;
-  font-family: "bistro-script-web-1", "bistro-script-web-2";
+  font-family: "bistro-script-web",cursive;
   font-weight: 400;
 
-  transform:rotate(-7deg);
   -ms-transform:rotate(-7deg); /* IE 9 */
   -moz-transform:rotate(-7deg); /* Firefox */
   -webkit-transform:rotate(-7deg); /* Safari and Chrome */
   -o-transform:rotate(-7deg); /* Opera */
+  transform:rotate(-7deg);
 
 }
 
@@ -138,7 +137,7 @@ table {
 }
 
 .footer-nav  {
-  line-height: 0px;
+  line-height: 0;
   text-align: center;
   margin: 0 auto;
 }
@@ -168,11 +167,11 @@ table {
 }
 
 .twitter {
-  background-position: -80px 0px;
+  background-position: -80px 0;
 }
 
 .dribbble {
-  background-position: -120px 0px;
+  background-position: -120px 0;
 }
 
 .github {
@@ -184,5 +183,5 @@ table {
 }
 
 .linkedin {
-  background-position: -240px 0px;
+  background-position: -240px 0;
 }
