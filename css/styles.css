@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   margin: 0;
   padding: 0;
-  background: url(/images/bg_texture.png) repeat 0 0;
+  background: url(/img/bg_texture.png) repeat 0 0;
   color: #000000;
   line-height: 1;
   text-rendering: optimizeLegibility;
@@ -62,9 +62,9 @@ table {
    j.mp/bestclearfix */
 
 .clearfix:before, .clearfix:after {
-    content: "\0020"; 
-    display: block; 
-    height: 0; 
+    content: "\0020";
+    display: block;
+    height: 0;
     overflow: hidden;
 }
 
@@ -83,6 +83,7 @@ table {
 }
 
 .sign {
+  background: #fff;
   padding: 20px;
 
   -webkit-border-radius: 5px;
@@ -120,7 +121,7 @@ table {
   float: left;
   clear: both;
   margin: 10px 0 0 70px;
-  background: url(/images/stroke.png);
+  background: url(/img/stroke.png);
 }
 
 .been {
@@ -154,11 +155,11 @@ table {
 .services {
   width: 30px;
   height: 30px;
-  background-image: url(/images/services-set-grey.png);
+  background-image: url(/img/services-set-grey.png);
 }
 
 .services:hover {
-  background-image: url(/images/services-set.png);
+  background-image: url(/img/services-set.png);
 }
 
 .services a {
