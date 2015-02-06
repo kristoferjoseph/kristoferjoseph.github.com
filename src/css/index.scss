@@ -1,0 +1,48 @@
+/* Entry */
+@import 'colors';
+@import 'typography';
+@import 'layout';
+@import 'spacing';
+@import 'button';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: $color;
+}
+
+.foo {
+  padding: 0 4rem;
+}
+
+.header {
+}
+
+.blue {
+  background: $color;
+}
+
+.project {
+  height: 100%;
+}
+
+.hero {
+  color: $bg-color;
+}
+
+.footer {
+  color: $bg-color;
+  background: $color-1;
+}
+

@@ -1,0 +1,18 @@
+/* Scale */
+$ratio: 1.61803398875;
+$base: 1;
+/* Up */
+$up-1: $ratio;
+$up-2: $up-1 * $ratio;
+$up-3: $up-2 * $ratio;
+$up-4: $up-3 * $ratio;
+$up-5: $up-4 * $ratio;
+$up-6: $up-5 * $ratio;
+/* Down */
+$dwn-1: $base / $ratio;
+$dwn-2: $dwn-1 / $ratio;
+$dwn-3: $dwn-2 / $ratio;
+$dwn-4: $dwn-3 / $ratio;
+$dwn-5: $dwn-4 / $ratio;
+$dwn-6: $dwn-5 / $ratio;
+

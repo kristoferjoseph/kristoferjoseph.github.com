@@ -1,0 +1,56 @@
+/* Typography */
+@import 'fonts/regular';
+@import 'fonts/bold';
+@import 'fonts/light-italic';
+@import 'scale';
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: #{$base}rem;
+  line-height: $ratio;
+}
+
+.display {
+  line-height: $base;
+}
+
+.light {
+  font-weight: 200;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.xs {
+  font-size: #{$dwn-2}rem;
+}
+
+.sm {
+  font-size: #{$dwn-1}rem;
+}
+
+.md {
+  font-size: #{$base}rem;
+}
+
+.lg {
+  font-size: #{$up-1}rem;
+}
+
+.xl {
+  font-size: #{$up-2}rem;
+}
+
+.xxl {
+  font-size: #{$up-3}rem;
+}
+

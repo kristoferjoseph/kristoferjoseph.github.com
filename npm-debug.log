@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'i', 'css-mqpacker', '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'css-mqpacker', null ]
+6 verbose cache add name=undefined spec="css-mqpacker" args=["css-mqpacker",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'css-mqpacker',
+7 verbose parsed url   path: 'css-mqpacker',
+7 verbose parsed url   href: 'css-mqpacker' }
+8 silly lockFile 390e45d5-css-mqpacker css-mqpacker
+9 verbose lock css-mqpacker /Users/drainbramage/.npm/390e45d5-css-mqpacker.lock
+10 silly lockFile 390e45d5-css-mqpacker css-mqpacker
+11 silly lockFile 390e45d5-css-mqpacker css-mqpacker
+12 verbose addNamed [ 'css-mqpacker', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile e1e9fc36-css-mqpacker css-mqpacker@
+15 verbose lock css-mqpacker@ /Users/drainbramage/.npm/e1e9fc36-css-mqpacker.lock
+16 silly addNameRange { name: 'css-mqpacker', range: '*', hasData: false }
+17 verbose request where is /css-mqpacker
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 8bbca4f9f391bcb5
+20 verbose url raw /css-mqpacker
+21 verbose url resolving [ 'https://registry.npmjs.org/', './css-mqpacker' ]
+22 verbose url resolved https://registry.npmjs.org/css-mqpacker
+23 verbose request where is https://registry.npmjs.org/css-mqpacker
+24 info trying registry request attempt 1 at 23:14:59
+25 verbose etag "9125FXR9FROYEVG18O8WVFQRR"
+26 http GET https://registry.npmjs.org/css-mqpacker
+27 http 200 https://registry.npmjs.org/css-mqpacker
+28 silly registry.get cb [ 200,
+28 silly registry.get   { date: 'Wed, 04 Feb 2015 07:14:59 GMT',
+28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly registry.get     etag: '"42KXRVQF8U0QKW7LIPK0CEBS5"',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     'content-length': '25523',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     'x-served-by': 'cache-lax1433-LAX',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1423034099.575066,VS0,VE147',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 silly addNameRange number 2 { name: 'css-mqpacker', range: '*', hasData: true }
+30 silly addNameRange versions [ 'css-mqpacker',
+30 silly addNameRange   [ '0.0.1',
+30 silly addNameRange     '0.0.2',
+30 silly addNameRange     '0.0.3',
+30 silly addNameRange     '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.1.2',
+30 silly addNameRange     '0.1.3',
+30 silly addNameRange     '0.1.4',
+30 silly addNameRange     '1.0.0',
+30 silly addNameRange     '1.1.0',
+30 silly addNameRange     '1.1.1',
+30 silly addNameRange     '1.1.2',
+30 silly addNameRange     '2.0.0',
+30 silly addNameRange     '2.1.0',
+30 silly addNameRange     '3.0.0',
+30 silly addNameRange     '2.1.1',
+30 silly addNameRange     '3.0.1' ] ]
+31 verbose addNamed [ 'css-mqpacker', '3.0.1' ]
+32 verbose addNamed [ '3.0.1', '3.0.1' ]
+33 silly lockFile b2154f1d-css-mqpacker-3-0-1 css-mqpacker@3.0.1
+34 verbose lock css-mqpacker@3.0.1 /Users/drainbramage/.npm/b2154f1d-css-mqpacker-3-0-1.lock
+35 silly lockFile 64419a37--mqpacker-css-mqpacker-3-0-1-tgz https://registry.npmjs.org/css-mqpacker/-/css-mqpacker-3.0.1.tgz
+36 verbose lock https://registry.npmjs.org/css-mqpacker/-/css-mqpacker-3.0.1.tgz /Users/drainbramage/.npm/64419a37--mqpacker-css-mqpacker-3-0-1-tgz.lock
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/css-mqpacker/-/css-mqpacker-3.0.1.tgz',
+37 verbose addRemoteTarball   'f10bed5ec00345c3d894bee34ed0843ae460ad06' ]
+38 info retry fetch attempt 1 at 23:14:59
+39 verbose fetch to= /var/folders/xv/hsn1q1hx2j31wfczsztd8y2c0000gn/T/npm-59655-MSdGB-Mp/registry.npmjs.org/css-mqpacker/-/css-mqpacker-3.0.1.tgz
+40 http GET https://registry.npmjs.org/css-mqpacker/-/css-mqpacker-3.0.1.tgz
+41 http 200 https://registry.npmjs.org/css-mqpacker/-/css-mqpacker-3.0.1.tgz
+42 silly lockFile 64419a37--mqpacker-css-mqpacker-3-0-1-tgz https://registry.npmjs.org/css-mqpacker/-/css-mqpacker-3.0.1.tgz
+43 silly lockFile 64419a37--mqpacker-css-mqpacker-3-0-1-tgz https://registry.npmjs.org/css-mqpacker/-/css-mqpacker-3.0.1.tgz
+44 silly lockFile b2154f1d-css-mqpacker-3-0-1 css-mqpacker@3.0.1
+45 silly lockFile b2154f1d-css-mqpacker-3-0-1 css-mqpacker@3.0.1
+46 silly lockFile e1e9fc36-css-mqpacker css-mqpacker@
+47 silly lockFile e1e9fc36-css-mqpacker css-mqpacker@
+48 error Error: EACCES, mkdir '/Users/drainbramage/.npm/css-mqpacker/3.0.1'
+48 error  { [Error: EACCES, mkdir '/Users/drainbramage/.npm/css-mqpacker/3.0.1']
+48 error   errno: 3,
+48 error   code: 'EACCES',
+48 error   path: '/Users/drainbramage/.npm/css-mqpacker/3.0.1',
+48 error   parent: 'kristoferjoseph.github.com' }
+49 error Please try running this command again as root/Administrator.
+50 error System Darwin 14.0.0
+51 error command "node" "/usr/local/bin/npm" "i" "css-mqpacker" "--save-dev"
+52 error cwd /Users/drainbramage/Documents/work/kristoferjoseph.github.com
+53 error node -v v0.10.32
+54 error npm -v 1.4.28
+55 error path /Users/drainbramage/.npm/css-mqpacker/3.0.1
+56 error code EACCES
+57 error errno 3
+58 error stack Error: EACCES, mkdir '/Users/drainbramage/.npm/css-mqpacker/3.0.1'
+59 verbose exit [ 3, true ]
