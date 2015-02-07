@@ -11,11 +11,31 @@ html {
 body {
   font-family: "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
   font-size: #{$base}rem;
-  line-height: $ratio;
+  line-height: $base;
+  letter-spacing: 0.618;
+  font-weight: normal;
 }
 
-.display {
-  line-height: $base;
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+.right-xs {
+  text-align: right;
+}
+
+.center-xs {
+  text-align: center;
+}
+
+.left-xs {
+  text-align: left;
+}
+
+.text {
+  line-height: $ratio;
 }
 
 .light {
@@ -52,5 +72,25 @@ body {
 
 .xxl {
   font-size: #{$up-3}rem;
+}
+
+.space-1 {
+  letter-spacing: #{$base}px;
+}
+
+@media screen and (min-width: 48) {
+
+  .right-sm {
+    text-align: right;
+  }
+
+  .center-sm {
+    text-align: center;
+  }
+
+  .left-sm {
+    text-align: left;
+  }
+
 }
 

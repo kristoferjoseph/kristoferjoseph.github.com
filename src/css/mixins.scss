@@ -1,0 +1,28 @@
+@import 'queries';
+
+$xs: '-xs';
+$sm: '-sm';
+$md: '-md';
+$lg: '-lg';
+
+$sizes: #{$xs} #{$sm} #{$md} #{$lg};
+
+@mixin queries {
+  @media screen and (min-width: #{$viewport-xs}) { @content }
+  @media screen and (min-width: #{$viewport-sm}) { @content }
+  @media screen and (min-width: #{$viewport-md}) { @content }
+  @media screen and (min-width: #{$viewport-lg}) { @content }
+}
+
+@mixin breakpoints($selector, $columns: 0) {
+  @each $size in $sizes {
+    @if ($columns  > 0 ) {
+      @for $i from 1 through $columns {
+        #{$selector}#{$size}-#{$i} { @content }
+      }
+    } @else {
+        #{$selector}#{$size} { @content }
+    }
+  }
+}
+

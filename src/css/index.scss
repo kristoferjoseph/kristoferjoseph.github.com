@@ -1,9 +1,11 @@
 /* Entry */
-@import 'colors';
-@import 'typography';
+@import 'scale';
 @import 'layout';
+@import 'colors';
+// @import 'typography';
 @import 'spacing';
-@import 'button';
+
+// @import 'button';
 
 *,
 *:before,
@@ -13,36 +15,40 @@
   margin: 0;
 }
 
-html,
 body {
-  height: 100%;
+  color: $theme-dark;
+  background: $theme-light;
 }
 
-body {
-  color: $color;
+%section {
+  height: 24rem;
 }
 
-.foo {
-  padding: 0 4rem;
+.shadow {
+  text-shadow: 0 1px $theme-dark;
 }
 
 .header {
+  background: $shade-1;
+  @extend %section;
 }
 
-.blue {
-  background: $color;
+.section-1 {
+  background-color: $shade-2;
+  @extend %section;
+}
+
+.section-2 {
+  background-color: $shade-3;
+  @extend %section;
 }
 
 .project {
-  height: 100%;
 }
 
 .hero {
-  color: $bg-color;
 }
 
 .footer {
-  color: $bg-color;
-  background: $color-1;
 }
 

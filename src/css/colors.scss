@@ -1,7 +1,43 @@
-$color: #031C40;
-$bg-color: #FAFAFA;
-$color-1: #0D70FF;
-$color-2: #0CA0E8;
-$color-3: #00EFFF;
-$color-4: #0CE8B9;
-$color-5: #0DFF86;
+$theme-light: #FAFAFA; /* Off white */
+$theme-dark: #031C40; /* Darkest Blue */
+$theme: #0D70FF; /* Theme Blue */
+$shade-1: #0C65E5;
+$shade-2: #0A54BF;
+$shade-3: #06387F;
+/* Alternates */
+$color-1: #00EFFF; /* Teal */
+$color-2: #0CE8B9; /* Green Shade */
+$color-3: #0DFF86; /* Green */
+
+.theme-light {
+  color: $theme-light;
+}
+
+.theme-dark {
+  color: $theme-dark;
+}
+
+.shade-1 {
+  color: $shade-1;
+}
+
+.shade-2 {
+  color: $shade-2;
+}
+
+.shade-3 {
+  color: $shade-3;
+}
+
+.color-1 {
+  color: $color-1;
+}
+
+.color-2 {
+  color: $color-2;
+}
+
+.color-3 {
+  color: $color-3;
+}
+
