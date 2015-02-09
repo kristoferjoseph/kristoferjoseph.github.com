@@ -1,27 +1,43 @@
-@import 'queries';
+$viewport-xs: 30em;
+$viewport-sm: 48em;
+$viewport-md: 62em;
+$viewport-lg: 75em;
 
-$xs: '-xs';
-$sm: '-sm';
-$md: '-md';
-$lg: '-lg';
+$xs: 'xs';
+$sm: 'sm';
+$md: 'md';
+$lg: 'lg';
 
-$sizes: #{$xs} #{$sm} #{$md} #{$lg};
+$modifier-delimiter: '-';
+$step-delimiter: '-';
 
-@mixin queries {
-  @media screen and (min-width: #{$viewport-xs}) { @content }
-  @media screen and (min-width: #{$viewport-sm}) { @content }
-  @media screen and (min-width: #{$viewport-md}) { @content }
-  @media screen and (min-width: #{$viewport-lg}) { @content }
+$sizes: #{$xs}, #{$sm}, #{$md}, #{$lg};
+$queries: #{$viewport-xs}, #{$viewport-sm}, #{$viewport-md}, #{$viewport-lg};
+
+@mixin queries($queries: $queries) {
+  @each $query in $queries {
+    @media screen and (min-width: #{$query}) {
+      @content
+    }
+  }
 }
 
-@mixin breakpoints($selector, $columns: 0) {
+@mixin breakpoints($selector, $columns: 0, $queries: $queries) {
   @each $size in $sizes {
     @if ($columns  > 0 ) {
       @for $i from 1 through $columns {
-        #{$selector}#{$size}-#{$i} { @content }
+        #{$selector}#{$modifier-delimiter}#{$size}#{$step-delimiter}#{$i} {
+          @include queries($queries) {
+            @content
+          }
+        }
       }
     } @else {
-        #{$selector}#{$size} { @content }
+      #{$selector}#{$modifier-delimiter}#{$size} {
+        @include queries($queries) {
+          @content
+        }
+      }
     }
   }
 }

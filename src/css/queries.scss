@@ -3,8 +3,8 @@ $viewport-sm: 48em;
 $viewport-md: 62em;
 $viewport-lg: 75em;
 
-$media-xs: "@media screen and (min-width: #{$viewport-xs})";
-$media-sm: "@media screen and (min-width: #{$viewport-sm})";
-$media-md: "@media screen and (min-width: #{$viewport-md})";
-$media-lg: "@media screen and (min-width: #{$viewport-lg})";
+$media-xs: @media screen and (min-width: #{$viewport-xs});
+$media-sm: @media screen and (min-width: #{$viewport-sm});
+$media-md: @media screen and (min-width: #{$viewport-md});
+$media-lg: @media screen and (min-width: #{$viewport-lg});
 

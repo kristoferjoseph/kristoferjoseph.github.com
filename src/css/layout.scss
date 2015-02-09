@@ -9,39 +9,27 @@
 }
 
 @include breakpoints('.col', 12) {
-  @include queries {
-    display: flex;
-    flex: 0 1 auto;
-  }
+  display: flex;
+  flex: 0 1 auto;
 }
 
 @include breakpoints('.top') {
-  @include queries {
-    align-items: flex-start;
-  }
+  align-items: flex-start;
 }
 
 @include breakpoints('.middle') {
-  @include queries {
-    align-items: center;
-  }
+  align-items: center;
 }
 
 @include breakpoints('.bottom') {
-  @include queries {
-    align-items: flex-end;
-  }
+  align-items: flex-end;
 }
 
 @include breakpoints('.around') {
-  @include queries {
-    justify-content: space-around;
-  }
+  justify-content: space-around;
 }
 
 @include breakpoints('.between') {
-  @include queries {
-    justify-content: space-between;
-  }
+  justify-content: space-between;
 }
 
